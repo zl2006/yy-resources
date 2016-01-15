@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>开店助手-互联网营销,策划活动</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="../../../css/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="../../../css/site/site.css">
+    <link type="text/css" rel="stylesheet" href="../../../js/amd-alter/ui-jqvalidator/0.7.3/jquery.validator.css"/>
+</head>
+<body>
+<!-- 头部-->
+<div id="top"> <!-- logo,搜索码/会员区域 -->
+    <a class="logo-main">开店助手</a>
+    <img src="../../../app/demo/admin/images/site/split.png" class="logo-split" alt="split">
+    <a class="logo-second">互联网营销</a>
+
+    <form class="pure-form search-frm" action="#">
+        <div class="type"
+             style="height: 34px; background-color: gainsboro; border:1px solid #ccc; width :60px;display: inline-block;vertical-align:middle;padding-left:5px;margin-right: -6px">
+            <label>会员</label>
+
+        </div>
+        <input class="ctx" type="text">
+        <button class="pure-button button-secondary">搜索</button>
+    </form>
+    <div class="info">
+        <a>服务市场</a> | <a>帮助中心</a> | <a href="../login.html">退出</a><br>
+        <a>欢迎liangzhou20066!</a>
+    </div>
+</div>
+<!--top end-->
+
+
+<!--菜单区域-->
+<div id="menu">
+    <ul id="site-menu">
+        <li class="menu-item"><a href="../index.html">首页</a></li>
+        <li class="select menu-item">
+            <span><a href="list.html">营销服务</a></span>
+
+            <div class="menu-item-sub menu-service">
+                <div class="service-category">
+                    <div class="service-cat-title">基础营销</div>
+                    <div class="service-list">
+                        <div class="list-wrap">
+                            <div class="service-item">
+                                <img src="../../../app/demo/admin/images/demo/discut.jpg">限时打折
+                            </div>
+                            <div class="service-item">收藏有礼</div>
+                            <div class="service-item">满就送</div>
+                            <div class="service-item">满就减</div>
+                            <div class="service-item">满包邮</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-category">
+                    <div class="service-cat-title">互动应用</div>
+                    <div class="service-list">
+                        <div class="list-wrap">
+                            <div class="service-item"><img src="../../../app/demo/admin/images/demo/pengpeng.jpg">碰碰有礼</div>
+                            <div class="service-item">大转盘</div>
+                            <div class="service-item">泡泡堂</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-category">
+                    <div class="service-cat-title">溯源验真</div>
+                    <div class="service-list">
+                        <div class="list-wrap">
+                            <div class="service-item">扫码溯源</div>
+                            <div class="service-item"><a href="add.html">扫码验真</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="menu-item">
+            <span><a href="#">会员管理</a></span>
+            <ul class="menu-item-sub">
+                <li><a href="#">会员管理</a></li>
+                <li><a href="#">标签管理</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <span><a href="#">数据分析</a></span>
+            <ul class="menu-item-sub">
+                <li><a href="#">活动分析</a></li>
+                <li><a href="#">流量分析</a></li>
+                <li><a href="#">商品分析</a></li>
+                <li><a href="#">会员分析</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <span><a href="#">移动商城</a></span>
+            <ul class="menu-item-sub">
+                <li><a href="#">产品管理</a></li>
+                <li><a href="#">商城装修</a></li>
+                <li><a href="#">内容发布</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">帮助中心</li>
+    </ul>
+</div>
+<!--men end-->
+
+
+<div id="main" class="clearfix">
+    <div id="nav"><!--导航区-->
+        <span class="title">常用功能</span>
+
+        <h3 class="on n_parent"><i class="fa fa-male"></i>营销服务</h3>
+        <ul style="display: block;">
+            <li class="n_child">-活动列表</li>
+            <li class="n_child select">-策划活动</li>
+            <li class="n_child">-活动分析</li>
+        </ul>
+        <h3 class="on n_parent"><i class="fa fa-male"></i>奖池管理</h3>
+        <ul style="display: none;">
+            <li class="n_child">-奖池配置</li>
+            <li class="n_child">-奖池列表</li>
+        </ul>
+    </div>
+    <!--nav end-->
+    <div class="content_wrap">
+        <div class="content">
+            <div class="posi">
+                当前位置：营销服务 -- <span class="select">策划活动(扫码验真)</span>
+            </div>
+            <form action="#">
+                <div class="pure-form pure-form-aligned form">
+                    <div class="form-area">
+                        <div class="title">
+                            一、活动基本信息
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="name">活动名称：</label>
+                            <input id="name" name="name" type="text" placeholder="输入用户姓名"
+                                   data-rule="required;length[8~]" class="pure-u-2-5" value="恒大冰泉扫码送红包活动">
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="start_time">活动时间：</label>
+                            <input id="start_time" type="text" placeholder="活动开始时间" class="Wdate pure-u-1-8 "
+                                   onclick="WdatePicker()">到
+                            <input id="end_time" type="text" placeholder="活动结束时间" onclick="WdatePicker()"
+                                   class="Wdate pure-u-1-8 ">
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="member_limit" class="pure-radio">参与限制： </label>
+                            <input id="member_limit" name="member_limit" type="radio" value="all" checked>无限制
+                            <input name="member_limit" type="radio" value="member" class="place-40">会员
+                            <input name="member_limit" type="radio" value="not_member" class="place-40">非会员
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="award">奖池：</label>
+                            <input id="award" name="award" type="text" placeholder="请选择奖池" value="5-6月份红包雨奖池"
+                                   class="pure-u-1-5" readonly>
+                            <a class="pure-button pure-button-primary button-xsmall"
+                               style="background-color: #ff4f00"> 选择奖池 </a>
+                            <a class="button-xsmall pure-button pure-button-primary">配置奖池</a>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="type">服务类型：</label>
+                            <input id="type" name="cf_pwd" type="text" class="pure-u-1-5" readonly value="扫码验真">
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="remind">到期提醒：</label>
+                            <input id="remind" name="remind" type="radio" value="yes">是
+                            <input name="remind" type="radio" value="no" class="place-40" checked>否
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="remark">描述：</label>
+                                <textarea id="remark" type="text" placeholder="描述" rows="3" cols="80"
+                                          class="pure-u-5-8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-area">
+                        <div class="title">
+                            二、积分配置(可选)<a href="javascript:void(0)" class="showhide">显示</a>
+                        </div>
+                        <fieldset style="display: none">
+                            <div class="pure-control-group">
+                                <label for="score">每次扫码送积分：</label>
+                                <input id="score" type="number" placeholder="扫码送积分" class="pure-u-1-5">&nbsp;分
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-area">
+                        <div class="title">
+                            三、模板配置
+                        </div>
+                        <fieldset>
+                            <div style="float:left;width:300px;text-align: center">
+                                <img src="../../../app/demo/admin/images/demo/scan_check_template.jpg" alt=""
+                                     style="border: 1px solid darkgray"><br>
+                                选择模板
+                            </div>
+                            <div style="float:left;width:600px;">
+                                <div class="pure-control-group">
+                                    <label for="menu1">菜单(首页):</label>
+                                    <input id="menu1" type="text" placeholder="名称" class="pure-u-1-5">
+                                    <input type="text" placeholder="链接" class="pure-u-2-5">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label for="menu2">菜单(领取优惠券):</label>
+                                    <input id="menu2" type="text" placeholder="名称" class="pure-u-1-5">
+                                    <input type="text" placeholder="链接" class="pure-u-2-5">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label for="menu3">菜单(会员中心):</label>
+                                    <input id="menu3" type="text" placeholder="名称" class="pure-u-1-5">
+                                    <input type="text" placeholder="链接" class="pure-u-2-5">
+                                </div>
+                                <div class="pure-control-group">
+                                    <label>选择背景图:</label>
+                                    <a class="pure-button pure-button-primary button-xsmall"> 选择 </a>
+                                </div>
+                                <div class="pure-control-group">
+                                    <label></label>
+                                    <img src="../../../app/demo/admin/images/demo/scan_back.jpg"
+                                         style="border: 1px solid darkgray;">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-oper">
+                    <button type="submit" class="pure-button pure-button-primary pure-u-1-8 button-large">提交</button>
+                    <a class="pure-button button-large pure-u-1-8" href="list.html">返回</a>
+                </div>
+            </form>
+            <!--form end-->
+        </div>
+        <!--content end-->
+    </div>
+</div>
+<!--main end-->
+
+
+<!-- 尾部区-->
+<div id="footer">
+    Copyright @2011-2014 http://www.aibaicai.com/湖南YY工作室 版权所有 邮编：414000
+</div>
+<!--footer end-->
+
+
+<script language="javascript" type="text/javascript" src="../../../js/normal/ui-my97date/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="../../../js/normal/base-require/2.1.11/require.min.js"></script>
+<script type="text/javascript" src="../../../app/demo/admin/js/require.config.js"></script>
+<script type="text/javascript">
+    require(['jqvalidator', 'sticky', 'jqsuperslide'], function ($, sticky, slide) {
+        $('.showhide').on('click', function (eventObj) {
+            var ff = $('fieldset', $(eventObj.currentTarget).parent().parent());
+            if (ff.css('display') == 'none') {
+                ff.css('display', 'block');
+                $(eventObj.currentTarget).text('隐藏');
+            } else {
+                ff.css('display', 'none');
+                $(eventObj.currentTarget).text('显示');
+            }
+        })
+        sticky("#menu", {top: 0, left: 0});
+        slide("#nav").slide({
+            titCell: "h3",
+            targetCell: "ul",
+            defaultIndex: 1,
+            effect: "slideDown",
+            delayTime: 300,
+            trigger: "click",
+            defaultPlay: false,
+            returnDefault: false
+        });
+        slide("#site-menu").slide({
+            type: "menu",
+            titCell: ".menu-item",
+            targetCell: ".menu-item-sub",
+            delayTime: 400,
+            triggerTime: 0,
+            returnDefault: false
+        });
+    })
+</script>
+</body>
+</html>

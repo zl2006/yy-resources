@@ -1,0 +1,19 @@
+----------------------公共资源框架(/)--------------------
+/css			:样式资源
+/images			:图片资源
+/js			:脚本资源
+/app			:存放项目资源
+/demo			:框架演示项目
+----------------------demo项目资源(/app/demo)--------------------
+/app/demo/admin		:demo项目的资源（管理端）
+/app/demo/mobile	:demo项目的资源（前端手机）
+/app/demo/pc		:demo项目的资源（前端PC）
+----------------------demo项目演示（/demo), 资源统一存放在/app/demo/中------------------------
+/demo/admin(mobile,pc)/common				:公共页面，页头/页尾/错误页
+/demo/admin(mobile,pc)/module1				:module业务模块
+/demo/admin(mobile,pc)/module1/submodlue		:submodule业务子模块
+
+
+			
+
+

@@ -1,0 +1,60 @@
+amd-alter:表示改造过的amd组件
+amd-origi:表示amd规范定义的组件
+app:项目提供的业务js组件
+normal:框架普通js,通过script引入 
+require.config.js:配置文件 
+
+
+1、amd-alter文件夹下的组件，通常为改造后的amd组件
+a, 同时支持<script src="**"></srcipt>引入和require('**')方式引入。
+例如：
+    <script type="text/javascript" src="js/artdialog_amd/5.0.4/artDialog.min.js"></script>
+    <script type="text/javascript" src="js/artdialog_amd/5.0.4/artDialog.plugins.min.js"></script>
+    或
+    require(["dialog5_plugins"], function(art){
+        art.prompt('你的名字是什么？', function (value) {
+            alert(value);
+        }, '糖饼');
+    })
+注意事项：
+a, 如果artDialog.plugins.min.js通过script引入，那么它依赖的artDialog.min.js也必须通过script引入
+b, script方式类似于普通js编写方式，依赖js必须放置在前。
+
+
+b, 改造方法为(见artDialog.plugins.min.js)：
+加上此方法主要用于通过script引入脚本后，再通过require(**)引入不会重复加载js文件。
+if ( typeof define === "function" && define.amd ) {
+    define( "dialog5_plugins", ["dialog5"], function () { return art; } );  //art为全局变量
+}
+
+c, 依赖方式为（见require.config.js），无依赖时可以不写：
+shim: {
+    'dialog5_plugins': {
+        deps: ['dialog5'],
+        exports: 'art'
+    }
+}
+
+
+2、amd-origi下的组件为标准AMD规范组件（通过define函数定义）
+a, 只支持require('**')方式引入。
+require(['url'], function(url){
+    console.log(new url("http://www.baidu.com").hostname);
+})
+
+b, 组件定义方式为,有多种方式见AMD规范：
+define(function(require, exports, module) {
+    var Url = function(url) {};
+    module.exports = Url;
+});
+
+
+3、组件名，普通js组件
+a, 只支持<script src="**"></script>
+
+
+4、模块合并
+a,合并base模块，它依赖于class，event，attribute等组件，合并后生成base.min.js文件
+r.js -o baseUrl=./modules/arale-base/1.2.0/  name=base out=base.min.js
+node r.js -o baseUrl=./modules/arale-overlay/1.2.0/  name=mask   excludeShallow=jquery,position,widget,base,class,events,aspect,attribute,daparser,auto-render  out=mask.min.js
+

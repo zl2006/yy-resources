@@ -1,0 +1,182 @@
+/***********************************内容区的总体边距********************************/
+#banner, #cnt-statis, #cnt-activity, #cnt-template{
+    width: 1200px;
+    margin : 10px auto;
+}
+/***********************************内容区的总体边距 end********************************/
+
+
+/***********************************统计内容区********************************/
+#cnt-statis{        /*统计区高度*/
+    height:250px;
+}
+/*统计区域标题*/
+#cnt-statis .title{
+    margin: 5px;
+    padding: 0 5px 5px 5px;
+    font:bold  20px  '微软雅黑';
+    border-bottom: 1px solid #E4E4E4;
+}
+#cnt-statis .title img{     /*标题图像*/
+    vertical-align: -6px;
+}
+
+/*统计区域内容*/
+#cnt-statis .content{
+    line-height: 35px;
+    padding-left: 15px;
+    font-weight:lighter;
+    font-size :14px;
+}
+#cnt-statis .content a{         /**每行内容*/
+    display: block;
+}
+#cnt-statis .content a.import{  /*每行重点内容*/
+    color : red;
+}
+#cnt-statis .content label{     /*每行内容标注*/
+    font-weight: bold;
+    font-size: 15px;
+}
+#cnt-statis  .oper{             /*操作区域*/
+    padding:20px 30px;
+}
+#cnt-statis  .oper button{
+    margin-right: 20px;
+}
+
+
+
+/*统计栏和动态栏组*/
+#cnt-statis .statis-group{
+    border : 1px solid #E4E4E4;
+    height : 100%;
+    width : 800px;
+    float : left;
+}
+
+/**统计栏*/
+#cnt-statis .statis-group .statis{
+    width : 500px;
+    height : 100%;
+    float :left;
+}
+
+/**动态栏*/
+#cnt-statis .statis-group .dynamic{
+    border-left :1px solid #E4E4E4;
+    width :299px;
+    height : 100%;
+    float :right;
+}
+
+/**公告栏*/
+#cnt-statis .notice{
+    border : 1px solid #E4E4E4;
+    height : 100%;
+    width : 380px;
+    float:right;
+}
+/***********************************统计内容区 end********************************/
+
+
+/***********************************活动内容区********************************/
+#cnt-activity{
+    border: 1px solid #E4E4E4;
+    border-top: 2px solid #09f;
+}
+
+#cnt-activity .name{
+    color : #09f;
+    cursor: pointer;
+}
+
+#cnt-activity .progress{                    /*活动进度*/
+    text-align: center;
+}
+#cnt-activity .progress-bar{
+    width:90%;float:left;padding:0 5%;      /*进度条*/
+}
+
+#cnt-activity .progress-left{               /*进度条左边,活动完成进度*/
+    height:4px;display: inline-block;background-color: #0c6;float:left;
+}
+
+#cnt-activity .progress-right{              /*进度条左边,活动未完成进度*/
+    height:4px;display: inline-block;background-color: black;float:right;
+}
+/***********************************活动内容区 end********************************/
+
+
+/***********************************模板区 end********************************/
+#cnt-template{
+    border: 1px solid #E4E4E4;
+}
+
+#cnt-template .header{
+    line-height: 35px;
+    padding-left : 30px;
+    font-size :14px;
+    position: relative;
+}
+
+#cnt-template .header .title{
+    font-size :20px;
+}
+
+#cnt-template .header ul{               /*热门模板类目*/
+    display: inline-block;
+    vertical-align: -12px;
+    color : #09f;
+}
+#cnt-template .header ul li{            /*热门模板类目项*/
+    float : left;
+    width :80px;
+    cursor: pointer;
+}
+
+#cnt-template .header .more{            /*更多模板*/
+    position: absolute;
+    right :0;
+    margin-right: 5px;
+    cursor: pointer;
+    color : #09f;
+}
+
+#cnt-template .content {
+    padding: 20px 0;
+    height : 600px;
+}
+#cnt-template .content ul{          /*热门模板区*/
+    float: left;
+    width :100%;
+    padding-left : 40px;
+}
+#cnt-template .content li {         /*热门模板项*/
+    float : left;
+    position: relative;
+    width :182px;
+    height: 264px;
+    margin:0 50px 50px 0;
+    border:1px solid   #E4E4E4;
+    overflow: hidden;
+}
+
+#cnt-template .content img{         /*热门模板图*/
+    width:100%;
+}
+
+#cnt-template .content .info{       /*热门模板简述信息*/
+    color:white;
+    font-size:14px;
+    position: absolute;
+    opacity:0.3; filter: alpha(opacity=30); background-color:#000;
+    width :100%;
+    height : 50px;
+    bottom: 0;
+    left:0;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 8px;
+}
+/***********************************模板区 end********************************/

@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>开店助手-互联网营销,活动列表</title>
+    <link rel="stylesheet" href="../../../css/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="../../../css/site/site.css">
+</head>
+<body>
+<!-- 头部-->
+<div id="top"> <!-- logo,搜索码/会员区域 -->
+    <a class="logo-main">开店助手</a>
+    <img src="../../../app/demo/admin/images/site/split.png" class="logo-split" alt="split">
+    <a class="logo-second">互联网营销</a>
+    <form class="pure-form search-frm" action="#">
+        <input type="text" class="ctx">
+        <button class="pure-button button-secondary">搜索</button>
+    </form>
+    <div class="info">
+        <a>服务市场</a> | <a>帮助中心</a> | <a href="../login.html">退出</a><br>
+        <a>欢迎liangzhou20066!</a>
+    </div>
+</div>
+<!--top end-->
+
+
+<!--菜单区域-->
+<div id="menu">
+    <ul id="site-menu">
+        <li class="menu-item"><a href="../index.html">首页</a></li>
+        <li class="select menu-item">
+            <span><a href="list.html">营销服务</a></span>
+            <div class="menu-item-sub menu-service">
+                <div class="service-category">
+                    <div class="service-cat-title">基础营销</div>
+                    <div class="service-list">
+                        <div class="list-wrap">
+                            <div class="service-item">
+                                <img src="../../../app/demo/admin/images/demo/discut.jpg" >限时打折
+                            </div>
+                            <div class="service-item">收藏有礼</div>
+                            <div class="service-item">满就送</div>
+                            <div class="service-item">满就减</div>
+                            <div class="service-item">满包邮</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-category">
+                    <div class="service-cat-title">互动应用</div>
+                    <div class="service-list">
+                        <div class="list-wrap">
+                            <div class="service-item"><img src="../../../app/demo/admin/images/demo/pengpeng.jpg" >碰碰有礼</div>
+                            <div class="service-item">大转盘</div>
+                            <div class="service-item">泡泡堂</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-category">
+                    <div class="service-cat-title">溯源验真</div>
+                    <div class="service-list">
+                        <div class="list-wrap">
+                            <div class="service-item"><a href="add.html">扫码溯源</a></div>
+                            <div class="service-item">扫码验真</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="menu-item">
+            <span><a href="#">会员管理</a></span>
+            <ul class="menu-item-sub">
+                <li><a href="#">会员管理</a></li>
+                <li><a href="#">标签管理</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <span><a href="#">数据分析</a></span>
+            <ul class="menu-item-sub">
+                <li><a href="#">活动分析</a></li>
+                <li><a href="#">流量分析</a></li>
+                <li><a href="#">商品分析</a></li>
+                <li><a href="#">会员分析</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <span><a href="#">移动商城</a></span>
+            <ul class="menu-item-sub">
+                <li><a href="#">产品管理</a></li>
+                <li><a href="#">商城装修</a></li>
+                <li><a href="#">内容发布</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">帮助中心</li>
+    </ul>
+</div><!--men end-->
+
+
+<!--页面主体区-->
+<div id="main" class="clearfix">
+    <div id="nav"><!--导航区-->
+        <span class="title">常用功能</span>
+        <h3 class="on n_parent"><i class="fa fa-male"></i>营销服务</h3>
+        <ul style="display: block;">
+            <li class="n_child select">-活动列表</li>
+            <li class="n_child">-策划活动</li>
+            <li class="n_child">-活动分析</li>
+        </ul>
+        <h3 class="on n_parent"><i class="fa fa-male"></i>奖池管理</h3>
+        <ul style="display: none;">
+            <li class="n_child">-奖池配置</li>
+            <li class="n_child">-奖池列表</li>
+        </ul>
+    </div><!--nav end-->
+    <div id="content_wrap"><!--内容区-->
+        <div class="content">
+            <div class="posi"><!--面包屑-->
+                当前位置：营销服务 -- <span class="select">活动列表</span>
+            </div><!--posi-->
+            <form class="pure-form search"><!--搜索表单-->
+                <label for="name">活动名称：</label>
+                <input id="name" type="text" placeholder="请输入活动名称" style="width:20%">
+
+                <label for="type">服务类型：</label>
+                <input id="type" type="text" placeholder="选择服务类型" style="width:20%">
+
+                <label for="state">状态：</label>
+                <select id="state" style="width: 20%">
+                    <option>有效</option>
+                    <option>无效</option>
+                </select>
+
+                <button type="submit" class="pure-button pure-button-primary"><i class="fa fa-search"></i>搜索</button>
+            </form><!--search end-->
+            <table class="pure-table search-res" width="100%"><!--搜索结果 -->
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>活动名称</th>
+                    <th>服务类型</th>
+                    <th>活动时间</th>
+                    <th>参与限制</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>恒大冰泉扫码送积分</td>
+                    <td>扫码溯源</td>
+                    <td>2015-1-1到2016-1-1</td>
+                    <td>无限制</td>
+                    <td>进行中</td>
+                    <td width="160">
+                        <button class="button-xsmall pure-button pure-button-primary">编辑</button>
+                        <button class="pure-button pure-button-primary button-xsmall" style="background-color: #ff4f00"> 中止 </button>
+                        <button class="button-xsmall pure-button pure-button-primary">延期</button>
+                    </td>
+                </tr>
+
+                <tr class="odd">
+                    <td>2</td>
+                    <td>双十一大转盘抽奖</td>
+                    <td>大转盘抽奖</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>进行中</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">编辑</button>
+                        <button class="pure-button pure-button-primary button-xsmall" style="background-color: #ff4f00"> 中止 </button>
+                        <button class="button-xsmall pure-button pure-button-primary">延期</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+
+                <tr class="odd">
+                    <td>4</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+
+                <tr class="odd">
+                    <td>6</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+
+                <tr class="odd">
+                    <td>8</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+
+                <tr class="odd">
+                    <td>10</td>
+                    <td>测试一</td>
+                    <td>碰碰有礼</td>
+                    <td>2015-1-1到2016-7-1</td>
+                    <td>会员</td>
+                    <td>到期</td>
+                    <td>
+                        <button class="button-xsmall pure-button pure-button-primary">查看</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <ul class="pagination" id="pagination"></ul><!-- 分页组件 -->
+        </div><!-- content end-->
+    </div>
+</div><!--main end-->
+
+<!-- 尾部区-->
+<div id="footer" class="clearfix">
+    Copyright @2011-2014 http://www.aibaicai.com/湖南YY工作室 版权所有 邮编：414000
+</div><!--footer end-->
+
+
+<script type="text/javascript" src="../../../js/normal/base-require/2.1.11/require.min.js"></script>
+<script type="text/javascript" src="../../../app/demo/admin/js/require.config.js"></script>
+<script type="text/javascript">
+    requirejs(['jqpaginator','jqsuperslide','sticky'], function ($,slide,sticky) {
+        sticky("#menu", {top:0, left:0});
+        //sticky("#nav", {top:0, left:0});
+        slide("#nav").slide({titCell:"h3", targetCell:"ul",defaultIndex:1,effect:"slideDown",delayTime:300,trigger:"click",defaultPlay:false,returnDefault:false});
+        slide("#site-menu").slide({ type: "menu", titCell: ".menu-item", targetCell: ".menu-item-sub", delayTime: 400, triggerTime: 0, returnDefault: false  });
+
+        $("#pagination").jqPaginator({
+            totalPages: 100,
+            visiblePages: 10,
+            currentPage: 1,
+            first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
+            prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
+            next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
+            last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
+            page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+            onPageChange: function (n) {
+                $("#demo2-text").html("当前第" + n + "页");
+            }
+        });
+    })
+</script>
+</body>
+</html>
