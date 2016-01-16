@@ -1,0 +1,247 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,var
+	{
+	border: 0 none;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html,body {
+	background: none no-repeat scroll center top #F2F9F6;
+	color: #262C26;
+	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
+	font-size: 11px;
+	height: auto;
+}
+
+p,blockquote {
+	line-height: 1.4em;
+}
+
+.hidden,.invisible {
+	visibility: hidden !important;
+}
+
+ul,ol,dir,menu {
+	list-style: none outside none;
+}
+
+a {
+	color: #005A8C;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#background-gradient {
+	background-image: -moz-linear-gradient(center top, #DEEFE9, #F2F9F6);
+	height: 370px;
+}
+
+div#wrapper {
+	margin: 0 auto;
+	width: 950px;
+}
+
+div#body-header ul.links {
+	color: #757D7A;
+	float: right;
+	font-size: 10px;
+	height: 30px;
+	line-height: 30px;
+	padding-bottom: 45px;
+}
+
+div#body-header .logo-and-tabs {
+	clear: both;
+}
+
+div#main {
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+	float: left;
+	width: 950px;
+}
+
+.btn {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #F5F5F5;
+	background-image: -moz-linear-gradient(center top, #FFFFFF, #E6E6E6);
+	background-repeat: repeat-x;
+	border-color: #E6E6E6 #E6E6E6 #A2A2A2;
+	border-image: none;
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px
+		rgba(0, 0, 0, 0.05);
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 0;
+	padding: 4px 14px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+}
+
+.btn-primary {
+	background-color: #FAA732;
+	background-image: -moz-linear-gradient(center top, #FBB450, #F89406);
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,.btn-primary:active,.btn-primary.active,.btn-primary.disabled,.btn-primary[disabled],#pop-rules-submit.btn-primary:hover,#pop-split-submit.btn-primary:hover,.masked div.pop.newpop a.button.default.primary.btn.btn-primary:hover,.masked div.pop.newpop a.button.default.primary.btn.btn-primary:active,.masked div.pop.newpop a.button.default.primary.btn.btn-primary.active,.masked div.pop.newpop a.button.default.primary.btn.btn-primary.disabled,.masked div.pop.newpop a.button.default.primary.btn.btn-primary[disabled]
+	{
+	background: none repeat scroll 0 0 #F89406;
+}
+
+.form-error,.error label,.error .vError,table.popup fieldset .error label span,.error .ajax
+	{
+	color: #BD1A00;
+	font-weight: bold;
+}
+
+form .vError,form .vMessage {
+	margin-top: 2px;
+	min-height: 20px;
+}
+
+div#body-footer {
+	clear: both;
+	color: #333333;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	font-size: 9px;
+	line-height: 24px;
+	padding: 20px 0 25px;
+	position: relative;
+	text-align: center;
+}
+
+div#body-footer a {
+	color: #333333;
+}
+
+div#body-footer a {
+	border-right: 1px solid #CCCCCC;
+	color: #333333;
+	font: 200 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 0 12px;
+}
+
+form fieldset ol li label {
+	color: #555;
+	display: block;
+	float: left;
+	font-weight: bold;
+	line-height: 1;
+	margin: 8px 10px 0 0;
+	text-align: right;
+	width: 110px;
+}
+
+form#form-login fieldset ol li label {
+	float: none;
+	line-height: normal;
+	text-align: left;
+	height: 18px;
+}
+
+form#form-login fieldset ol li#remember_me {
+	margin: 1% 0;
+}
+
+form#form-login fieldset ol li#remember_me label {
+	display: inline;
+	font-weight: normal;
+	height: auto;
+	vertical-align: middle;
+}
+
+div#body-header,div#wrapper,div#main,div#body-container {
+	width: 690px;
+}
+
+div.formbox {
+	margin: 50px;
+	margin-right: 35px;
+	margin-top: 43px;
+	position: relative;
+}
+
+div.title h1 {
+	text-indent: 0;
+	background: none;
+	font-weight: bold;
+	font-size: 28px;
+	color: #333;
+	margin-bottom: 40px;
+}
+
+div.tips {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: solid 1px #ddd;
+	height: 528px;
+	width: 200px;
+	background: none;
+	padding: 0;
+	padding-left: 15px;
+}
+
+#formbox-login-tips {
+	height: 220px;
+}
+
+#formbox-login div.tips {
+	padding-top: 0;
+	width: 200px;
+}
+
+form fieldset ol li label {
+	float: none;
+	margin: 0;
+	text-align: left;
+	padding-bottom: 5px;
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+	width: 100%;
+}
+
+form#form-login fieldset ol li#remember_me label {
+	color: #666;
+	font-weight: normal;
+	font-size: 12px;
+	position: absolute;
+}
+
+form fieldset ol li input,form fieldset ol li select {
+	float: none;
+	color: #666;
+}
+
+.error .vError {
+	font-weight: normal;
+	width: 100%;
+}
+
+.vError {
+	color: red;
+}
+
+.error label {
+	color: #333;
+}
