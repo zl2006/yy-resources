@@ -2,6 +2,7 @@
 var _normal = 'js/normal/';
 var _alter = 'js/amd-alter/';
 var _origi = 'js/amd-origi/';
+var _app = 'app/user/js/';
 requirejs.config({
     baseUrl: 'http://localhost:8888',
     paths: {
@@ -49,13 +50,22 @@ requirejs.config({
         'qrcode' : _origi + 'ui-qrcode/1.1.0/qrcode.min',                      //二维码生成组件
         'sticky' : _origi + 'ui-sticky/1.4.0/sticky.min',                      //固定元素组件，使其不随文档滚动而移动
         //'auto-render' : _origi + 'ui-widget/1.2.0/auto-render.min',          //自动渲染组件
-        //'daparser' : _origi + 'ui-widget/1.2.0/daparser.min',
+        //'daparser' : _origi + 'ui-widget/1.2.0/daparser.min,
 	'jqlayer' : _alter + 'ui-jqlayer/2.0/layer',				//弹出框
-        'mask' : _origi + 'ui-overlay/1.2.0/mask.min'                        //浮动层基础组件,带遮照层
+        'mask' : _origi + 'ui-overlay/1.2.0/mask.min',                        //浮动层基础组件,带遮照层
+	'jqtreetable' : _alter + 'ui-jqmytreetable/1.4.2/treeTable',
 
 
-        /**测试demo*/
-        //'register' : "app-seller/register/1.0.0/register"
+	/************应用模块*********/
+	'business' : 'app/common/business/1.0/business',				//所有增、删、改、查页面的基础组件
+	'organ' : 'app/user/js/component/organ',
+	'resource' : 'app/user/js/component/resource',
+	'system' : 'app/user/js/component/system',
+	'organ_business' : 'app/user/js/business/organ_business',
+	'res_business' : 'app/user/js/business/res_business'
+	
+
+
     },
     shim: {
         'dialog5-plugins': {

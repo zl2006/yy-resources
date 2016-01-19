@@ -1,0 +1,12 @@
+{
+  "family": "jquery",
+  "name": "mytreetable",
+  "version": "1.4.2",
+  "keywords": [ "treetable", "jquery-plugin" ],
+  "spm": {
+    "alias": {
+      "$": "$"
+    },
+    "output": ["treeTable.js","default/**","vsStyle/**"]
+  }
+}

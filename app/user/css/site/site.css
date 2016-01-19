@@ -1,0 +1,473 @@
+/***********************************增加公共样式***************************************/
+.button-success, .button-error, .button-warning, .button-secondary {
+    color: white;
+}
+.button-success {
+    background: none repeat scroll 0 0 rgb(28, 184, 65);
+}
+.button-error {
+    background: none repeat scroll 0 0 rgb(202, 60, 60);
+}
+.button-warning {
+    background: none repeat scroll 0 0 rgb(223, 117, 20);
+}
+.button-secondary {
+    background: none repeat scroll 0 0 rgb(66, 184, 221);
+}
+
+html,body{
+    min-width: 1250px;
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+
+.clearfix {
+    /**清浮动*/
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.odd {
+    background-color: #f6f6f6;
+}
+
+.pure-table thead {
+    /*表头背景色*/
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.button-xsmall {
+    /**控制按钮大小*/
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
+
+.place-5 {
+    /**占位符,5px*/
+    margin-left: 5px;
+}
+
+.place-10 {
+    /**占位符,10px*/
+    margin-left: 10px;
+}
+
+.place-15 {
+    /**占位符,10px*/
+    margin-left: 15px;
+}
+
+.place-20 {
+    /**占位符,10px*/
+    margin-left: 20px;
+}
+
+.place-40 {
+    /**占位符,10px*/
+    margin-left: 40px;
+}
+
+.pure-form-aligned .pure-control-group {
+    margin-bottom: 1em;
+}
+
+#data_table .pointer{
+	cursor: pointer;
+}
+/***********************************top********************************/
+#top{
+    height: 30px;
+    padding : 5px 0 0 40px;
+    position: relative;
+    background: #f6f6f6 none repeat scroll 0 0;
+}
+
+/*主LOGO*/
+#top .logo-main{
+    font:bold  20px  '微软雅黑';
+    color:red;
+}
+/*logo间分隔符*/
+#top .logo-split{
+    height:25px;
+    width:1px;
+    margin : 0 5px;
+    vertical-align: -6px;
+}
+/*副LOGO*/
+#top .logo-second{
+    font:bold  16px  '微软雅黑';
+    color:blue;
+}
+
+/*搜索form*/
+#top .search-frm{
+    display:inline-block;
+    height : 36px;
+    line-height: 36px;
+    width : 600px;
+    vertical-align: 5px;
+    margin-left:100px;
+}
+
+/*搜索文本内容*/
+#top .search-frm .ctx{
+    width:338px;
+    margin-right:-8px;
+    height: 36px;
+}
+
+/*搜索按钮*/
+#top .search-frm button{
+    height : 36px;
+    border :1px solid #129fea;
+}
+
+/*信息区*/
+#top .info{
+    position: absolute;
+    display: inline-block;
+    width:350px;
+    margin-top:5px;
+    line-height:25px;
+    font-size : 13px;
+    text-align:right;
+    top:0;
+    right:18px;
+}
+#top .info a {
+    color:#129fea;
+}
+#top .info a:hover{
+    cursor : pointer;
+}
+/***********************************top end********************************/
+
+
+
+
+/***********************************menu********************************/
+/**菜单组成: 菜单组件(区块)->菜单项->子菜单组件(区块)-菜单项.
+/**菜单组件容器*/
+#menu, #site-menu {
+    background-color: #6d6d6d;
+    height: 50px;
+    line-height: 50px;
+    width : 100%;
+    z-index: 2;
+}
+#site-menu .menu-item:first-child{
+    margin-left : 40px;
+}
+/**菜单组件中链接的样式*/
+#site-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/**菜单项包括子菜单项(被选择)的样式*/
+#site-menu li.select {
+    background-color: #3191ff;
+}
+
+/**菜单项包括子菜单项(被鼠标放置)的样式*/
+#site-menu li:hover {
+    cursor: pointer;
+    background-color: #3191ff;
+}
+
+/**菜单项样式*/
+#site-menu .menu-item {
+    width: 150px;
+    line-height: 50px;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+
+/**子菜单组件*/
+#site-menu .menu-item-sub {
+    display: none;
+    width: 220px;
+    padding: 5px 10px 10px 10px;
+    position: absolute;
+    filter:alpha(opacity:90);opacity:0.9;
+    left: 0;
+    background: #6d6d6d;
+    z-index: 2;
+}
+
+/**子菜单项*/
+#site-menu .menu-item-sub li {
+    float: left;
+    text-align: left;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0 5px;
+    width: 100px;
+}
+
+
+/**服务欺菜单*/
+#site-menu .menu-service{
+    width: 650px;
+}
+#site-menu .service-category{     /*某一类服务*/
+    float: left;
+    width :100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+#site-menu .service-category:last-child{
+    border-bottom: 0 solid white;
+}
+
+#site-menu  .service-cat-title{    /*某一类服务标题*/
+    float:left;
+    width:150px;
+    font-size:18px;
+    font-weight: bold;
+}
+#site-menu  .service-list{         /*某一类服务下提供的服务列表*/
+    margin-left:-150px;
+    width:100%;
+    float:left;
+}
+#site-menu .service-list .list-wrap{
+    margin-left:150px;float:left
+}
+#site-menu .service-item{         /*某一类服务下提供的服务项*/
+    padding-top: 10px;
+    float:left;
+    width:100px;
+    height:90px;
+    font-size : 15px;
+    text-align: center;
+    line-height: 30px;
+}
+#site-menu .service-item img{
+    width:60px;
+    height: 60px;
+    display:block;
+    margin:0px 20px;
+}
+#site-menu .service-item:hover {
+    cursor: pointer;
+    background-color: #3191ff;
+}
+/***********************************menu end********************************/
+
+
+/***********************************nav********************************/
+#main{
+	/*width:1200px;
+	margin:0 auto;*/
+    margin-top: 20px;
+    margin-bottom:100px;
+}
+/**左边侧栏, 元素框为220*/
+#main #nav {
+    border: 1px solid #d6d6d6;
+    width: 218px;
+    height: 100%;
+    line-height: 50px;
+    margin-right: -230px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+/**导航主标题*/
+#nav .title{
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    font-size: 24px;
+    color : white;
+    background-color: #3191ff;
+}
+/*第一级导航项*/
+#nav .n_parent {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #d6d6d6;
+    padding-left: 30px;
+    margin : 0;
+}
+/*第二级导航项*/
+#nav .n_child ,#nav .n_child a{
+    color: #747474;
+    padding-left: 50px;
+}
+#nav .n_child a{
+	 padding-left: 0px;
+}
+#nav .n_child:hover,#nav .n_child a:hover{
+    color: #3191ff;
+    cursor: pointer;
+}
+#nav .n_child.select,#nav .n_child.select a {
+    color: #3191ff;
+}
+/***********************************nav end********************************/
+
+
+/**********************************content********************************/
+#main #content_wrap{
+    float:right;
+    width:100%;
+}
+
+#main .content{     /*内容区*/
+    margin-left:235px;
+    padding:0 10px;
+}
+
+#main .posi{        /*面包屑区*/
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #d6d6d6;
+    border-left: 5px solid #3191ff;
+}
+#main .search{      /*搜索表单区*/
+    margin-top :15px;
+    padding-left : 15px;
+    line-height: 50px;
+    border: 1px solid #d6d6d6;
+    background-color: #f8f8f8;
+}
+
+#main .search label{ /*搜索表单字段*/
+    adding-left: 20px;
+    padding-right: 5px;
+}
+
+#main .search-res{  /*搜索结果*/
+    margin-top : 15px;
+}
+#main .search-res tr td:last-child{ /*搜索结果*/
+    text-align: center;
+}
+#main .content .form {
+    /*搜索条件*/
+    margin-top: 10px;
+    border: 1px solid #d6d6d6;
+}
+#main .form .title {    /*表单区块标题*/
+    line-height: 40px;
+    height: 40px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#main .form .showhide{   /*表单区块显示操作*/
+    float:right;
+    margin-right: 20px;
+    color:#3191ff;
+}
+
+#main form .form-oper { /*表单提交区域*/
+    margin-top:20px;
+    margin-left:25%;
+    margin-bottom:20px;
+}
+
+
+
+/***********************************nav end********************************/
+
+/**********************************************分页组件*********************************************/
+.pagination {
+    /*分页组件*/
+    display: inline-block;
+    float: right;
+    margin-bottom: 60px;
+}
+
+.pagination > li {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.pagination > li > a {
+    /*默认所有分页按钮的样式*/
+    background: none repeat scroll 0 0 #fff;
+    color: #333;
+    margin-right: 5px;
+    padding: 6px 15px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.pagination > li > a:hover, .pagination > li > a:focus {
+    /*默认所有分页按钮hover,focue的样式*/
+    background: none repeat scroll 0 0 #fb9400;
+    border-color: #fb9400;
+    color: #fff;
+}
+
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus {
+    /*分页激活按钮hover,focue的样式*/
+    color: #fff;
+    background: #fb9400;
+    border-color: #fb9400;
+    cursor: default;
+}
+
+.pagination > li.disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    /*分页禁用按钮hover,focue的样式*/
+    background: #fff;
+    border-color: #ccc;
+    color: #ddd;
+    cursor: default;
+}
+/***********************************pagination end********************************/
+
+
+#footer {
+    background: none repeat scroll 0 0 #6d6d6d;
+    border-top: 1px solid #eee;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 0;
+    bottom:0;
+    margin-top: 30px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}
