@@ -57,7 +57,7 @@ requirejs.config({
 
 
 	/************应用模块*********/
-	//'business' : 'app/common/business/1.0/business',				//所有增、删、改、查页面的基础组件
+	'business' : 'app/common/business/1.0/business',				//所有增、删、改、查页面的基础组件
 	'register' : "app/qrcode-sso/js/register/1.0.0/register"	
 
 

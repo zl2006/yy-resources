@@ -9,6 +9,10 @@ var getScriptArgs=function(argName){//获取多个参数
 String.prototype.trim   =   function(){   
 	  return   this.replace(/(^\s*)|(\s*$)/g,"");   
 }
+
+var __script_page =  getScriptArgs('page');
+var __script_data = getScriptArgs('data');
+
 	
 /**
  * 通用页面处理
@@ -20,7 +24,8 @@ requirejs(['jquery','jqsuperslide'], function($,slide){
     slide("#site-menu").slide({ type: "menu", titCell: ".menu-item", targetCell: ".menu-item-sub", delayTime: 400, triggerTime: 0, returnDefault: false  });
     
 	//Step2:根据模块执行不同的业务
-	var page = getScriptArgs('page');
+	//var page = getScriptArgs('page');
+	var page = __script_page;
 	if(page == null || page.trim() == ''){
 		return;
 	}
@@ -37,7 +42,8 @@ requirejs(['jquery','jqsuperslide'], function($,slide){
 	
 	var options = {};
 	try{
-		options =  $.parseJSON( getScriptArgs('data') );
+		//options =  $.parseJSON( getScriptArgs('data') );
+		options = $.parseJSON(__script_data);
 	}catch(e){
 		//log.error(e)
 	}
